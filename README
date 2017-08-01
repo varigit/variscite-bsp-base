@@ -1,12 +1,14 @@
-Freescale's Community Yocto BSP
-===============================
+Variscite i.MX Yocto BSP
+========================
 
 Supported boards
 ----------------
 
-In order to know the supported boards, please, see the release notes at
+All of Variscite's i.MX based SOMs/boards
 
-   http://freescale.github.io/doc/release-notes/current/
+(In addition to the FSL Community supported boards, which are listed in their release notes at
+
+   http://freescale.github.io/doc/release-notes/current/)
 
 Quick Start Guide
 -----------------
@@ -57,3 +59,18 @@ The following layers are included on this release:
    GIT: git://github.com/Freescale/meta-freescale-distro.git
    Mailing list: https://lists.yoctoproject.org/listinfo/meta-freescale
    Note: Use [distro] in subject to easy the processing
+
+ * meta-browser: web browser recipes
+   Path: sources/meta-browser
+   Project: https://github.com/OSSystems/meta-browser
+   GIT: git://github.com/OSSystems/meta-browser.git
+
+ * meta-qt5: Qt5 support
+   Path: sources/meta-qt5
+   Project: https://github.com/meta-qt5/meta-qt5
+   GIT: git://github.com/meta-qt5/meta-qt5.git
+
+ * meta-variscite-fslc: support for Variscite's i.MX based SOMs/boards
+   Path: sources/meta-variscite-fslc
+   Project: https://github.com/varigit/meta-variscite-fslc
+   GIT: git://github.com/varigit/meta-variscite-fslc.git
