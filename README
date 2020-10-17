@@ -1,12 +1,14 @@
-Freescale's Community Yocto BSP
-===============================
+Variscite i.MX Yocto BSP
+========================
 
 Supported boards
 ----------------
 
-In order to know the supported boards, please, see the release notes at
+All of Variscite's i.MX based SOMs/boards
 
-   http://freescale.github.io/doc/release-notes/current/
+(In addition to the FSL Community supported boards, which are listed in their release notes at
+
+   http://freescale.github.io/doc/release-notes/current/)
 
 Quick Start Guide
 -----------------
@@ -14,7 +16,7 @@ Quick Start Guide
 Once you have downloaded the source of all projects, you will have to
 call:
 
-$: . ./setup-environment <build directory>
+$: MACHINE=<machine> DISTRO=<distro> source setup-environment <build directory>
 
 After this step, you will be with everything need for build an image.
 
@@ -57,3 +59,23 @@ The following layers are included on this release:
    GIT: git://github.com/Freescale/meta-freescale-distro.git
    Mailing list: https://lists.yoctoproject.org/listinfo/meta-freescale
    Note: Use [distro] in subject to easy the processing
+
+ * meta-qt5: Qt5 support
+   Path: sources/meta-qt5
+   Project: https://github.com/meta-qt5/meta-qt5
+   GIT: git://github.com/meta-qt5/meta-qt5.git
+
+ * meta-variscite-fslc: support for Variscite's i.MX based SOMs/boards
+   Path: sources/meta-variscite-fslc
+   Project: https://github.com/varigit/meta-variscite-fslc
+   GIT: git://github.com/varigit/meta-variscite-fslc.git
+
+ * meta-swupdate: Yocto layer for deploy tool
+   Path: sources/meta-swupdate
+   Project: https://github.com/sbabic/meta-swupdate
+   GIT: git://github.com/sbabic/meta-swupdate.git
+
+ * meta-virtualization: support for building Xen, KVM, Libvirt
+   Path: sources/meta-virtualization
+   Project: https://git.yoctoproject.org/git/meta-virtualization
+   GIT: git://git.yoctoproject.org/git/meta-virtualization.git
