@@ -65,10 +65,25 @@ The following layers are included on this release:
    Project: https://github.com/meta-qt5/meta-qt5
    GIT: git://github.com/meta-qt5/meta-qt5.git
 
- * meta-variscite-fslc: support for Variscite's i.MX based SOMs/boards
-   Path: sources/meta-variscite-fslc
-   Project: https://github.com/varigit/meta-variscite-fslc
-   GIT: git://github.com/varigit/meta-variscite-fslc.git
+ * meta-variscite-bsp-imx: BSP layer for Variscite SOMs using NXP i.MX SoCs. Contains hardware-specific metadata and configurations.
+   Path: sources/meta-variscite-bsp-imx
+   Project: https://github.com/varigit/meta-variscite-bsp-imx
+   GIT: git://github.com/varigit/meta-variscite-bsp-imx.git
+
+ * meta-variscite-bsp-common: Common BSP layer for Variscite SOMs. Contains shared metadata for both TI and NXP i.MX hardware platforms.
+   Path: sources/meta-variscite-bsp-common
+   Project: https://github.com/varigit/meta-variscite-bsp-common
+   GIT: git://github.com/varigit/meta-variscite-bsp-common.git
+
+ * meta-variscite-sdk-imx: SDK layer for Variscite SOMs using NXP i.MX SoCs. Contains recipes, classes, and images.
+   Path: sources/meta-variscite-sdk-imx
+   Project: https://github.com/varigit/meta-variscite-sdk-imx
+   GIT: git://github.com/varigit/meta-variscite-sdk-imx.git
+
+ * meta-variscite-sdk-common: Common SDK layer for Variscite SOMs. Contains shared recipes, classes, and images for both TI and NXP i.MX platforms.
+   Path: sources/meta-variscite-sdk-common
+   Project: https://github.com/varigit/meta-variscite-sdk-common
+   GIT: git://github.com/varigit/meta-variscite-sdk-common.git
 
  * meta-swupdate: Yocto layer for deploy tool
    Path: sources/meta-swupdate
