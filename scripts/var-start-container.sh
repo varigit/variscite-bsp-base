@@ -35,7 +35,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-./sources/var-host-docker-containers/run.sh -u 22.04 -w "$WORKSPACE_DIR"
+./sources/var-host-docker-containers/run.sh -u 22.04 -w "$WORKSPACE_DIR" -p
 
 if [ $? -ne 0 ]; then
     echo "#################################################"
