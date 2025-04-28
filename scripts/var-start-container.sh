@@ -1,10 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 WORKSPACE_DIR="$(pwd)"
 
-dpkg -l | grep "docker.io" > /dev/null
-
-if [ $? -ne 0 ]; then
+if ! command -v docker >/dev/null 2>&1; then
     echo "##################################################################################"
     echo "# [Error] Docker binary was not found in the system. Please, consider installing #"
     echo "# the docker.io package with the following command or equivalent:                #"
