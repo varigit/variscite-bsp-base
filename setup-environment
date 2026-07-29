@@ -165,9 +165,13 @@ EOF
     # Change settings according environment
     sed -e "s,MACHINE ??=.*,MACHINE ??= '$MACHINE',g" \
         -e "s,SDKMACHINE ??=.*,SDKMACHINE ??= '$SDKMACHINE',g" \
-        -e "s,DISTRO ?=.*,DISTRO ?= '$DISTRO',g" \
+        -e "s,^DISTRO[[:space:]]*[?][?]*[[:space:]]*=.*,DISTRO ?= '$DISTRO',g" \
         -e "s,PACKAGE_CLASSES ?=.*,PACKAGE_CLASSES ?= '$PACKAGE_CLASSES',g" \
         -i conf/local.conf
+
+    if ! grep -q '^DISTRO[[:space:]]*[?][?]*[[:space:]]*=' conf/local.conf; then
+        printf '%s\n' "DISTRO ?= '$DISTRO'" >> conf/local.conf
+    fi
 
     cp $TEMPLATES/* conf/
 
